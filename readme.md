@@ -90,7 +90,8 @@ The output will be something like:
 
 # 5. Configure HD Sentinel by the graphic interface File -> Configure NAS Monitoring
 
-![07- configureGUI.png](img/07-%20configureGUI.png)![07- configureGUI -2.png](07-%20configureGUI%20-2.png)
+![07- configureGUI.png](img/07-%20configureGUI.png)
+![07- configureGUI -2.png](img/07-%20configureGUI%20-2.png)
 
 End result:
 ![08-done.png](img/08-done.png)
