@@ -1,6 +1,8 @@
 The purpose of this tutorial is to set up a console version of HD Sentinel on QNAP NAS,
 enable scheduled execution and write the output to an accessible location in order to read it by the full version of HD Sentinel as described in https://www.hdsentinel.com/how_to_monitor_network_attached_storage_nas_status.php
 
+The steps were performed on [QNAP TS-231P](https://www.qnap.com/en/product/ts-231p/specs/hardware) with ARM CPU. 
+
 
 # 1. Enable SSH login
 1.1 Go to Telnet/ SSH in ControlPanel
