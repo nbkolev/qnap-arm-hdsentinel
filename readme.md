@@ -4,11 +4,11 @@ enable scheduled execution and write the output to an accessible location in ord
 
 # 1. Enable SSH login
 1.1 Go to Telnet/ SSH in ControlPanel
-![01 - enable ssh 1.png](img\01%20-%20enable%20ssh%201.png)
+![01 - enable ssh 1.png](img/01%20-%20enable%20ssh%201.png)
 1.2 Tick the "Allow SSH Connection"
-![01 - enable ssh 2.png](img\01%20-%20enable%20ssh%202.png)
+![01 - enable ssh 2.png](img/01%20-%20enable%20ssh%202.png)
 1.3 Do not forget to Apply
-![01 - enable ssh 3.png](img\01%20-%20enable%20ssh%203.png)
+![01 - enable ssh 3.png](img/01%20-%20enable%20ssh%203.png)
 
 # 2. Login with SSH
 
@@ -18,7 +18,7 @@ Recent Microsoft Windows 10/11 have SSH client built-in. If you dont have a SSH 
 
 `ssh -l <your_user_name> <nas_ip_address>`
 
-![02 - connect ssh 1.png](img\02%20-%20connect%20ssh%201.png)
+![02 - connect ssh 1.png](img/02%20-%20connect%20ssh%201.png)
 
 2.2 You have to agree
 (that the host is your NAS and NS.A/MO.SSAD/MI.5/K.GB... is not in the middle)
@@ -28,10 +28,10 @@ by typing `yes`
 
 2.3 You have to be able to see the following screen:
 
-![03- return to shell 1.png](img\03-%20return%20to%20shell%201.png)
+![03- return to shell 1.png](img/03-%20return%20to%20shell%201.png)
 
 Type `Q` + Enter
-![03- return to shell 2.png](img\03-%20return%20to%20shell%202.png)
+![03- return to shell 2.png](img/03-%20return%20to%20shell%202.png)
 
 Type `y` + Enter
 
@@ -53,7 +53,7 @@ to:
 
 2.4 Perform a test run by typing `./hdsentinelarm` and the output will be something like this:
 
-![04 - testrun.png](img\04%20-%20testrun.png)
+![04 - testrun.png](img/04%20-%20testrun.png)
 
 *If you see `Permission denied` probably the name of the executable has changed. Find it by typing `ls` and `chmod +x <newname>`.*
 
@@ -63,7 +63,7 @@ to:
 `find $(pwd) -name hdsentinelarm`
 
 Note the output will be something like:
-![05 - abspath.png](img\05%20-%20abspath.png)
+![05 - abspath.png](img/05%20-%20abspath.png)
 
 you could try to find this folder symlinked in `/share/homes/<YOUR_USER>/.hdsentinel/`
 
@@ -86,17 +86,17 @@ By either:
 `crontab /etc/config/crontab && /etc/init.d/crond.sh restart`
 
 The output will be something like:
-![06 - crontab.png](img\06%20-%20crontab.png)
+![06 - crontab.png](img/06%20-%20crontab.png)
 
 # 5. Configure HD Sentinel by the graphic interface File -> Configure NAS Monitoring
 
-![07- configureGUI.png](img\07-%20configureGUI.png)![07- configureGUI -2.png](07-%20configureGUI%20-2.png)
+![07- configureGUI.png](img/07-%20configureGUI.png)![07- configureGUI -2.png](07-%20configureGUI%20-2.png)
 
 End result:
-![08-done.png](img\08-done.png)
+![08-done.png](img/08-done.png)
 
 # 6. Final words:
 
 As of the time of writing (23 Jul 2023) running on QTS 5.0.1.2376 crontab schedule is working properly and the configuration survived reboot and QTS update. 
 Whether future versions of QTS will treat `crontab` in consistent manner is unknown so if your setup stops updating search for autorun/crontab/etc. in the forums for the particular version.
-"# qnap-arm-hdsentinel" 
+
