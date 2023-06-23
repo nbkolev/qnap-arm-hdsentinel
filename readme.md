@@ -35,19 +35,23 @@ Type `Q` + Enter
 
 Type `y` + Enter
 
+Now you are in the home directory of the administrator user you are using.
+
 # 3. Download and test HD Sentinel console version
 
 *Disclarmer: Some folks might argue that the following procedure is not secure enough and it would be better if HD Sentinel executable is moved to `/home/admin/.hdsentinel`. My train of thought is that if administrator level user is compromised is irrelevant which one exactly...*
 
-3.1 Use the following code: <br>
+Prerequisite: Following the steps of *2. Login with SSH*, by using administrator user. With current directory the home directory of the user. 
+
+- Create directory .hdsentinel (the "." symbol makes it hidden) in administrator's user home dir (It could be any directory, nevertheless **it has to be on a HDD** as QTS will not preserve on reboot files anywhere else).
+- Download HD Sentinel by using WGET (**Warning**: In case of running x86 QNAP, use the appropriate executable for the platform x86 from https://www.hdsentinel.com/hard_disk_sentinel_linux.php)
+- Make the file executable `+x`
+
+The following code achieves this:<br>
 `mkdir .hdsentinel`<br>
 `cd .hdsentinel`<br>
 `wget https://www.hdsentinel.com/hdslin/armv5/hdsentinelarm` <br>
 `chmod +x hdsentinelarm` <br>
-to:
-- Create directory .hdsentinel (the "." symbol makes it hidden) in administrator's user home dir (It could be any directory, nevertheless **it has to be on a HDD** as QTS will not preserve on reboot files anywhere else).
-- Download HD Sentinel by using WGET (**Warning**: In case of running x86 QNAP, use the appropriate executable for the platform x86 from https://www.hdsentinel.com/hard_disk_sentinel_linux.php)
-- Make the file executable `+x`
 
 **NOTE**: If you are running *x86* NAS do not forget to find the appropriate executable from the link above.
 
