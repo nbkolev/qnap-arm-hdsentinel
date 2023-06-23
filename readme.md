@@ -24,9 +24,11 @@ Recent Microsoft Windows 10/11 have SSH client built-in. If you dont have a SSH 
 (that the host is your NAS and NS.A/MO.SSAD/MI.5/K.GB... is not in the middle)
 by typing `yes`
 
-2.3 Enter your password when prompted
+2.3 Enter your password when prompted and press `Enter`
 
-2.3 You have to be able to see the following screen:
+2.4 Type `sudo -i` in the prompt and press `Enter` and type your password again.
+
+2.5 You have to be able to see the following screen:
 
 ![03- return to shell 1.png](img/03-%20return%20to%20shell%201.png)
 
